@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Reenie+Beanie&family=Rubik+Microbe&display=swap");
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  padding-top: 20px;
+  font-size: 3vw;
+  text-align: center;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 120vh;
+  width: 100%;
+}
+
+.btns {
+  margin: 2vh 4vw 2vh 4vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  font-size: 2vw;
+  background-color: transparent;
+  border: none;
+}
+.btn:hover {
+  color: #6ac045;
+}
+
+.car-grid {
+  padding-bottom: 4vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.car-tile {
+  position: relative;
+  margin: 2vh 1vw;
+  display: inline-block;
+}
+
+.car-img {
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px grey;
+  width: 400px;
+  /* margin-left: 2vw; */
+}
+
+.car-desc-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.car-tile:hover .car-desc-layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.car-desc {
+  max-height: 89%;
+  font-size: 0.95rem;
+  transform: translateY(1rem);
+  transition: 0.2s;
+}
+
+.car-tile:hover .car-desc {
+  transform: translateY(0);
+}
+
+.car-img:hover {
+  border: 5px solid grey;
+}
+
+@media (max-width: 800px) {
+  .car-img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 580px) {
+  .car-desc {
+    font-size: 0.7rem;
+  }
+  .car-img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 370px) {
+  .car-desc {
+    font-size: 0.5rem;
+  }
+  .car-img {
+    width: 70px;
+  }
+}
+h2 {
+  color: white;
+}
+h3 {
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+}
