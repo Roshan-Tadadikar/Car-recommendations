@@ -106,7 +106,6 @@ export default function App() {
                     <p className="car-desc">
                       {description[`${genre}`][`${item}`]}
                     </p>
-                    {/* <p className="car-desc">Amar Narute</p> */}
                   </div>
                 </div>
               );
